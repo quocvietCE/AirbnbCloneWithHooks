@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   buttonMenu: {
-    marginTop: 20,
+    marginTop: 40,
   },
   wrapperSearch: {
     position: 'absolute',
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     left: 0,
     backgroundColor: 'rgba(255,255,255,0.9)',
     width: '100%',
-    height: 80,
+    height: 120,
     zIndex: 99,
   },
   searchContainer: {
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     borderRadius: 3,
     height: 40,
-    marginTop: 28,
+    marginTop: 50,
     marginLeft: 20,
     width: '80%',
   },

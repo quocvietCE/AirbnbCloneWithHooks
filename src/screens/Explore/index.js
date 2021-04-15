@@ -23,12 +23,12 @@ const ExploreScreen = ({navigation, route}) => {
     fetchData();
   }, []);
 
-  const handleAddToFav = (listing) => {
+  const handleAddToFav = listing => {
     const {navigate} = navigation;
     const index = favouriteListings.indexOf(listing.id);
     if (index > -1) {
       const newFavouriteListings = favouriteListings.filter(
-        (item) => item !== listing.id,
+        item => item !== listing.id,
       );
       setFavouriteListings(newFavouriteListings);
     } else {
@@ -45,7 +45,7 @@ const ExploreScreen = ({navigation, route}) => {
       newFavouriteListings.push(listingId);
     } else {
       newFavouriteListings = favouriteListings.filter(
-        (item) => item !== listingId,
+        item => item !== listingId,
       );
     }
     setFavouriteListings(newFavouriteListings);
@@ -75,7 +75,7 @@ const ExploreScreen = ({navigation, route}) => {
   };
   return (
     <SafeAreaView style={styles.wrapper}>
-      <View style={styles.wrapper}>
+      <View style={[styles.wrapper]}>
         <SearchBar openDrawer={openDrawer} />
         <ScrollView
           style={styles.scrollview}

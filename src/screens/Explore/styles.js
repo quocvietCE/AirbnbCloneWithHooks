@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
     backgroundColor: Colors.white,
+    // paddingTop: 20,
+    // backgroundColor: 'red',
   },
   categories: {
     marginBottom: 40,
@@ -20,7 +22,7 @@ const styles = StyleSheet.create({
     paddingBottom: 80,
   },
   scrollview: {
-    paddingTop: 100,
+    paddingTop: 120,
   },
 });
 
